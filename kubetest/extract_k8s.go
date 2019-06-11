@@ -79,7 +79,7 @@ func (l *extractStrategies) Set(value string) error {
 		`^ci/(.+)$`:                           ci,
 		`^release/(latest.*)$`:                rc,
 		`^release/(stable.*)$`:                stable,
-		`^(v\d+\.\d+\.\d+[\w.\-+]*)$`:         version,
+		`^(v\d+\.\d+(\.\d+)?[\w.\-+]*)$`:      version,
 		`^(gs://.*)$`:                         gcs,
 		`^(bazel/.*)$`:                        bazel,
 		`^ci-cross/(.+)$`:                     ciCross,
