@@ -12,7 +12,6 @@ prow_push(
         cmds = [
             "admission",
             "autobump",
-            "botinvitationapprove",
             "branchprotector",
             "checkconfig",
             "clonerefs",
@@ -22,6 +21,7 @@ prow_push(
             "exporter",
             "gerrit",
             "crier",
+            "generic-autobumper",
             "grandmatriarch",
             "gcsupload",
             "hook",
@@ -100,6 +100,7 @@ filegroup(
         "//prow/cmd/entrypoint:all-srcs",
         "//prow/cmd/exporter:all-srcs",
         "//prow/cmd/gcsupload:all-srcs",
+        "//prow/cmd/generic-autobumper:all-srcs",
         "//prow/cmd/gerrit:all-srcs",
         "//prow/cmd/grandmatriarch:all-srcs",
         "//prow/cmd/hmac:all-srcs",
